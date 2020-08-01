@@ -1,0 +1,279 @@
+* {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  color: #2d2f3b;
+  background-color: ghostwhite;
+}
+
+p {
+  line-height: 20px;
+}
+
+.menu {
+  list-style: none;
+  border: 1px solid #c0c0c0;
+  float: left;
+}
+
+.menu li {
+  position: relative;
+  float: left;
+  border-right: 1px solid #c0c0c0;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  display: block;
+}
+
+.menu li a:hover {
+  background: #333;
+  color: #fff;
+  text-shadow: 0px 0px 5px #fff;
+}
+
+.menu li ul {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background-color: #fff;
+  display: none;
+}
+
+.menu li:hover ul,
+.menu li.over ul {
+  display: block;
+}
+
+.menu li ul li {
+  border: 1px solid #c0c0c0;
+  display: block;
+  width: 142px;
+}
+
+.menu li ul li {
+  background-color: cornflowerblue;
+  box-shadow: 0px 1px 2px gray;
+  line-height: 1.5;
+}
+
+.menu {
+  background-color: cornflowerblue;
+  box-shadow: 0px 1px 2px gray;
+  line-height: 2.5;
+}
+
+a:link {
+  color: rgb(24, 20, 236);
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+a:hover {
+  color: rgb(99, 96, 96);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  text-align: justify;
+}
+
+main {
+  padding: 20px;
+}
+
+h2 {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.box {
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  padding: 20px 40px;
+
+  max-width: 817px;
+  min-height: 300px;
+  background-color: aliceblue;
+  box-shadow: 0px 1px 2px gray;
+}
+
+.tv {
+  width: 250px;
+  height: 200px;
+  margin: 0px 20px;
+  box-shadow: 0px 1px 2px gray;
+  float: left;
+}
+
+.fichas figure {
+  width: 49.5%;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+  border: thin silver solid;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+.fichas {
+  text-align: center;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.fichas figure {
+  float: center;
+  margin: 56px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profundidade figure {
+  width: 74.5%;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+  border: thin silver solid;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+.profundidade {
+  text-align: center;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.profundidade figure {
+  float: center;
+  margin: 56px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.obturacao figure {
+  width: 86%;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+  border: thin silver solid;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+.obturacao figure {
+  float: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section.distancia {
+  width: 27.5%;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+  border: thin silver solid;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+section.distancia {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section.diafragma {
+  width: 89%;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+  border: thin silver solid;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+section.diafragma {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.figurestudio {
+  float: center;
+  width: 75%;
+  height: 75%;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+  border: thin silver solid;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+img.estudioscaled {
+  width: 100%;
+  height: 100%;
+}
+
+div.figurestudio {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 425px) {
+  h2 {
+    text-align: center;
+  }
+
+  .tv {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    margin: 0;
+  }
+
+  .fichas figure img {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    margin: 0;
+  }
+
+  .profundidade figure img {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    margin: 0;
+  }
+
+  .obturacao figure img {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    margin: 0;
+  }
+}
