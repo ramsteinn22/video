@@ -11,17 +11,22 @@ const previousSongButton = document.querySelector("#prev");
 const nextSongButton = document.querySelector("#next");
 
 function getSelectedSongs(event) {
+  //buscar as músicas
+  //guardar as músicas em uma variável
   songsList = event.target.files;
   uploadFileLabel.style.display = "none";
-
+  //começar a tocar a 1ª música
   playSong();
 }
 
 function playSong() {
+  //colocar a 1ª música dentro da tag de áudio para começar a tocá-la
   const songUrl = URL.createObjectURL(songsList[currentSong - 1]);
 
   player.setAttribute("src", songUrl);
+  //buscar o nome da música e colocar em h1
   songTitle.innerText = songsList[currentSong - 1].name;
+  //mudar o icone do botão play para o icone pause
   playButton.innerText = "⏸";
   player.play();
 
