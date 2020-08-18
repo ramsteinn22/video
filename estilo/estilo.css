@@ -279,6 +279,13 @@ button {
   box-shadow: 0px 1px 2px gray;
 }
 
+.fb-share-button {
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  padding: 20px 40px;
+}
+
 @media only screen and (max-width: 425px) {
   h2 {
     text-align: center;
