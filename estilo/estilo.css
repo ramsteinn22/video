@@ -286,6 +286,12 @@ button {
   padding: 20px 40px;
 }
 
+.disqus_thread {
+  margin: 0 auto;
+  max-width: 817px;
+  min-height: 300px;
+}
+
 @media only screen and (max-width: 425px) {
   h2 {
     text-align: center;
